@@ -1,0 +1,15 @@
+URI 1047: Game Time with Minutes
+Code (C++):
+#include <iostream>
+using namespace std;
+int main()
+{
+    int sm,sh,em,eh,th,tm;
+    cin>>sh>>sm>>eh>>em;
+    tm=((eh*60)+em)-((sh*60)+sm);
+    if(tm<=0)
+    {
+        tm=tm+(24*60);
+    }
+    cout<<"O JOGO DUROU "<<tm/60<<" HORA(S) E "<<tm%60<<" MINUTO(S)"<<endl;
+}
