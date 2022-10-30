@@ -1,0 +1,35 @@
+/* Bismillah */
+#include <iostream>
+#include <string>
+#include <iomanip>
+using namespace std;
+int main()
+{
+        double M[12][12];
+        int i,j;
+        double soma=0.0;
+        char O;
+        cin>>O;
+        cout<<fixed<<setprecision(1);
+        for(i=0; i<12; i++)
+        {
+                for(j=0; j<12; j++)
+                {
+                        cin>>M[i][j];
+                        if(j<i && (j+i)>11)
+                        {
+                                soma+=M[i][j];
+                        }
+                }
+        }
+        if(O=='S')
+        {
+                cout<<soma<<endl;
+        }
+        else
+        {
+                cout<<soma/30.0<<endl;
+        }
+}
+
+/* Alhamdulillah */
